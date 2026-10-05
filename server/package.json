@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -b && node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "add-data": "tsc -b && node dist/data/add.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "redis": "^4.6.13",
+    "zod": "^3.23.6"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.8",
+    "prisma": "^5.13.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
